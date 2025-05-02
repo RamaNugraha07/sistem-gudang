@@ -1,0 +1,52 @@
+# 📦 Aplikasi CRUD Barang & Autentikasi User
+
+Proyek ini adalah aplikasi berbasis web menggunakan Laravel 10 untuk mengelola data barang dengan fitur autentikasi user (register & login) serta CRUD data barang.
+
+## 🚀 Fitur Utama
+
+-   Register dan Login user
+-   CRUD data barang (Create, Read, Update, Delete)
+-   Validasi input menggunakan SweetAlert
+-   Mutasi barang (dalam pengembangan)
+
+---
+
+## 🛠️ Cara Install & Jalankan Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/RamaNugraha07/sistem-gudang.git
+cd nama-project
+```
+
+### 2. Install Dependency Laravel
+
+composer install
+
+### 3. Copy dan Konfigurasi File .env
+
+cp .env.example .env
+
+Lalu edit .env dan sesuaikan bagian ini:
+
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+
+### 4.Generate Key
+
+php artisan key:generate
+
+### 5.Jalankan Migrasi dan Seeder (jika ada)
+
+php artisan migrate
+
+### 6.Jalankan Server
+
+php artisan serve
+
+Akses aplikasi di: http://localhost:8000
+
+Berikut merupakan link Dokumentasi API
+https://www.postman.com/science-architect-92283498/workspace/my-workspace/collection/38118766-972339f3-4c81-4384-a56e-e9d2dce3db0e?action=share&creator=38118766
